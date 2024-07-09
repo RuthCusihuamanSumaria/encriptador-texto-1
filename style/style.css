@@ -219,6 +219,7 @@ body{
         flex-direction: column;
         width: auto;
     }
+
     .ingresar_texto{
         width: auto;
         padding: 20% 10% 10%;
@@ -257,6 +258,11 @@ body{
     header {
         top: 24px;
         left: 16px;
+    }
+
+    .cuerpo {
+        flex-direction: column;
+        width: auto;
     }
 
     .ingresar_datos {
