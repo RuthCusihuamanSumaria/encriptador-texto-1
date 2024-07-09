@@ -36,14 +36,7 @@ body{
     padding: 15% 0% 0% 5%;/*0% 5%;*/
     /*gap:82px;*/
     width: 100%;
-
-/*
-    width: 100%;*/
     min-height: 96%;
- 
-    
-    
-    
 }
 .ingresar_datos{
     display: flex;
@@ -121,15 +114,13 @@ body{
 }
 
 .salida_datos {
-    max-width:38rem;/*400px;*/
-    max-height: 100%;/*calc(96vh - 80px);*/
-    width: 120%;/*40%;*/
-    margin:25px; /*40px;*/
-    padding:0px 5px 10px 0;/*2.5rem; /*32px;*/
-    
+    max-width:38rem;
+    max-height: 100%;
+    width: 120%;
+    margin:25px; 
+    padding:0px 5px 10px 0;
     border-radius: 32px;
     background: var(--color-accent-4);
-    /*box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);*/
     display: flex;
     align-items: center;
 }
@@ -146,19 +137,21 @@ body{
 }
 .salida_error_text-box p {
     font-size: 1rem;
-    line-height: 120%;/*150*/
+    line-height: 120%;
     color: var(--color-accent-3);
 }
 .salida_error_text-box p:first-child {
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 100%; /*120*/
+    line-height: 100%; 
     margin-bottom: 16px;
 }
 .salida_resultado {
-    height: 100%;
-    width: 100%;
+    
+    height: 150%;
+    width: 120%;
     display: flex;
+    padding:1em ;
     flex-direction: column;
     justify-content: space-between;
     display: none;
@@ -178,7 +171,9 @@ body{
     flex-direction: column;
     gap: 24px;
     width: 100%;
-    margin-top: 32px;
+    padding:5px 50px 5px;
+    margin-top:150px;
+    /*justify-content: center;*/
 }
 
 .salida_resultado_botones {
@@ -238,8 +233,8 @@ body{
     }
 
     .ingresar_datos {
-        width:auto; /*calc(100% - (80px));*/
-        padding: 10px 50px 20px;/*70% 0 0 ;/*128% 0 0;*/
+        width:auto; 
+        padding: 10px 50px 20px;
         /*flex-direction: column;
         padding: 100px 10px 20px 150px;*/
     }
@@ -251,7 +246,7 @@ body{
     }
 
     .salida_datos {
-        width:auto; /*calc(100% - (80px));*/
+        width:auto; 
         margin-top: 0;
         max-width: 100%;
     }
@@ -292,7 +287,7 @@ body{
 
     .ingresar_datos {
         margin: 16px;
-        width:auto; /*calc(100% - (32px));*/
+        width:auto; 
         padding: 50% 0 0;
     }
 
@@ -306,7 +301,7 @@ body{
 
     .salida_datos {
         margin: 0 16px 16px;
-        width:auto; /*calc(100% - (32px));*/
+        width:auto; /
     }
 
     footer {
