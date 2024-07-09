@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="presentacion_imagen">
+        <a href="index.html"><img src="imagenes/logo.png" alt="logo de Alura"></a>
+
+    </header>
+    <main class="cuerpo">
+        <section class="ingresar_datos">
+            <textarea class="ingresar_texto" name="input-text" id="input-text" autocomplete="off" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <p>Sólo letras minúsculas y sin acentos</p>
+                <div class="ingresar_buttons">
+                    <button class="buttons_encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="buttons_encriptar desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="salida_datos">
+            <div class="salida_error" id="not-found">
+                <img class="salida_error_doll" src="imagenes/muñeco.png" alt="imagen de muñeco con lupa">
+                <div class="salida_error_text-box">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="salida_resultado" id="result">
+                <p class="salida_resultado_texto" id="output-text"></p>
+                <div class="salida_resultado_buttons">
+                    <button class="salida_resultado_botones" onclick="copiar()">Copiar</button>
+                    <button class="salida_resultado_botones button-2" id="paste" onclick="pegar()">Pegar</button>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>
+            Desarrolado por Ruth Cusihuaman Sumaria
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

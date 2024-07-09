@@ -1,0 +1,264 @@
+:root {
+    --color-main: #F3F5FC;
+    --color-accent-1: #0e5394;
+    --color-accent-2: #F3F5FC;
+    --color-accent-3: #000000;
+    --color-hover-1: #050505;
+    --color-hover-2: gray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color:var(--color-main);
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+} 
+.presentacion_imagen {
+    position: absolute;
+    top: 40px;
+    left: 84px;
+    width: 50%;
+}
+.cuerpo{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 5% 15%;
+    gap:82px;
+
+/*
+    width: 100%;
+    min-height: 96%;
+ */  
+    
+    
+    
+}
+.ingresar_datos{
+    width: 60%;
+    margin: 40px;
+    padding: 128px 0 32px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ingresar_texto {
+    background: var(--color-accent-2);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    border-color: none;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1.875rem;
+    color: var(--color-accent-1);
+    resize: none;
+}
+.ingresar_buttons{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+.ingresar_datos p::before {
+    content: url('https://api.iconify.design/bi/exclamation-circle-fill.svg');
+    padding-right: 8px;
+    vertical-align: text-top;
+}
+.ingresar_datos p {
+    font-size:0.75rem;
+    line-height: 150%;
+    color: black;
+    opacity: 0.8;
+    margin: 16px 0;
+}
+
+.buttons_encriptar, .salida_resultado_botones {
+    border: 1px solid var(--color-accent-1);
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: bolder;
+    line-height: 19px;
+    transition-duration: 0.4s;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.buttons_encriptar {
+    width: 50%;
+    background: var(--color-accent-1);
+    color: var(--color-main);
+}
+.desencriptar {
+    background: var(--color-main);
+    color: var(--color-accent-1);
+}
+.buttons_encriptar:hover, .salida_resultado_botones:hover {
+    background: var(--color-hover-1);
+}
+
+.desencriptar:hover {
+    background: var(--color-hover-2);
+}
+
+.salida_datos {
+    max-width: 400px;
+    max-height: calc(96vh - 80px);
+    width: 40%;
+    margin: 40px;
+    padding: 32px;
+    border-radius: 32px;
+    background: var(--color-accent-2);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+}
+.salida_error {
+    width: 100%;
+}
+.salida_error_doll {
+    width: 100%;
+}
+
+.salida_error_text-box {
+    margin: 0 auto;
+    text-align: center;
+}
+.salida_error_text-box p {
+    font: size 1rem;
+    line-height: 150%;
+    color: var(--color-accent-3);
+}
+.salida_error_text-box p:first-child {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+.salida_resultado {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.salida_resultado_texto {
+    font-size: 1.5rem;
+    padding: 5px;
+    min-height: 50px;
+    max-height: calc(100% - (200px));
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+.salida_resultado_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.salida_resultado_botones {
+    background-color: var(--color-accent-1);
+    color: var(--color-accent-2);
+}
+
+.button-2 {
+    background: var(--color-accent-2);
+    color: var(--color-accent-1);
+    display: none;
+}
+
+.button-2:hover {
+    background: var(--color-hover-2);
+}
+/*pie  de pagina*/
+footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 4%;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p {
+    line-height: 150%;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    header {
+        top: 40px;
+        left: 40px;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+
+    .ingresar_datos {
+        width:auto; /*calc(100% - (80px));*/
+        padding: 128%0 0;
+    }
+
+    .salida_datos {
+        width:auto; /*calc(100% - (80px));*/
+        margin-top: 0;
+        max-width: 100%;
+    }
+
+    .salida_error {
+        margin: 0;
+    }
+
+    .salida_error_doll {
+        display: none;
+    }
+}
+@media(max-width: 375px) {
+    header {
+        top: 24px;
+        left: 16px;
+    }
+
+    .ingresar_datos {
+        margin: 16px;
+        width:auto; /*calc(100% - (32px));*/
+        padding: 74px 0 0;
+    }
+
+    .ingresar_buttons {
+        flex-direction: column;
+    }
+
+    .buttons_encriptar {
+        width: 100%;
+    }
+
+    .salida_datos {
+        margin: 0 16px 16px;
+        width:auto; /*calc(100% - (32px));*/
+    }
+
+    footer {
+        padding: 0 16px;
+    }
+}
+
