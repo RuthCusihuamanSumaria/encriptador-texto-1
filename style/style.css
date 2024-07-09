@@ -40,12 +40,13 @@ body{
 }
 .ingresar_datos{
     display: flex;
-    /*width: 100%;*/
+    width: 100%;
     margin: 10px;/*40px;*/
     padding: 100px 10px 20px 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap:300px;
 }
 .ingresar_texto {
     display: flex;
@@ -59,7 +60,7 @@ body{
     border-color: none;
     font-family: Inter;
     font-weight: 400;
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     color: var(--color-accent-1);
     resize: none;
 }
@@ -115,7 +116,8 @@ body{
 
 .salida_datos {
     max-width:38rem;
-    max-height: 100%;
+    /*max-height: 100%;*/
+    margin-top: 0;
     width: 120%;
     margin:25px; 
     padding:0px 5px 10px 0;
@@ -148,8 +150,8 @@ body{
 }
 .salida_resultado {
     
-    height: 150%;
-    width: 120%;
+    height: 100%;
+    width: 100%;
     display: flex;
     padding:1em ;
     flex-direction: column;
@@ -160,8 +162,8 @@ body{
 .salida_resultado_texto {
     font-size: 1.5rem;
     padding: 5px;
-    min-height: 50px;
-    max-height: calc(100% - (200px));
+    min-height: 70px;
+    max-height: 100px; /*calc(100% - (200px));*/
     overflow: auto;
     overflow-wrap: break-word;
 }
@@ -169,11 +171,11 @@ body{
 .salida_resultado_buttons {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap:20px;
     width: 100%;
     padding:5px 50px 5px;
-    margin-top:150px;
-    /*justify-content: center;*/
+    margin-top:420px;
+    justify-content: center;
 }
 
 .salida_resultado_botones {
@@ -191,25 +193,24 @@ body{
     background: var(--color-hover-2);
 }
 /*pie  de pagina*/
+
 .footer {
     font-size: 1rem;
     font-weight: bold;
-    /*height: 4%;
-    width: 100%;*/
-    padding:24px; /*0 40px;*/
-    /*display: flex;*/
-    /*flex-direction: row;*/
+    padding:24px; 
     justify-content: center;
     font-weight: 400;
     gap: 70px;
    
 }
 
+
 .footer p {
     line-height: 100%;
     text-align: center;
     
 }
+
 
 @media(max-width: 1200px) {
     header {
