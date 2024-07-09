@@ -17,33 +17,35 @@ body{
     font-family: Inter, sans-serif;
     font-weight: 400;
     letter-spacing: 0em;
+    /*width: 50%;*/
 } 
 .presentacion_imagen {
     position: absolute;
     top: 40px;
     left: 84px;
-    width: 50%;
+    width: 100%;
 }
 .cuerpo{
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     flex-direction: row;
-    padding: 5% 15%;
-    gap:82px;
+    padding: 0% 5%;
+    /*gap:82px;*/
+    width: 100%;
 
 /*
-    width: 100%;
+    width: 100%;*/
     min-height: 96%;
- */  
+ 
     
     
     
 }
 .ingresar_datos{
-    width: 60%;
+    width: 100%;
     margin: 40px;
-    padding: 128px 0 32px 200px;
+    padding: 100px 10px 20px 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,6 +103,7 @@ body{
     color: var(--color-main);
 }
 .desencriptar {
+    /*width: 50%;*/
     background: var(--color-main);
     color: var(--color-accent-1);
 }
@@ -187,35 +190,50 @@ body{
     background: var(--color-hover-2);
 }
 /*pie  de pagina*/
-footer {
-    font-size: 1.5rem;
+.footer {
+    font-size: 1rem;
     font-weight: bold;
-    height: 4%;
-    width: 100%;
-    padding: 0 40px;
-    display: flex;
-    flex-direction: row;
+    /*height: 4%;
+    width: 100%;*/
+    padding:24px; /*0 40px;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
     justify-content: center;
+    font-weight: 400;
+   
 }
 
-footer p {
-    line-height: 150%;
+.footer p {
+    line-height: 100%;
     text-align: center;
+    
 }
 
-@media(max-width: 768px) {
+@media(max-width: 750px) {
     header {
         top: 40px;
         left: 40px;
     }
     
-    main {
+    .cuerpo {
         flex-direction: column;
+        width: auto;
+    }
+    .ingresar_texto{
+        width: auto;
+        padding: 20% 10% 10%;
     }
 
     .ingresar_datos {
         width:auto; /*calc(100% - (80px));*/
-        padding: 128%0 0;
+        padding: 128% 0 0;
+        /*flex-direction: column;*/
+    }
+    .buttons_encriptar{
+        font-size: 1rem;
+    }
+    .desencriptar{
+        font-size: 1rem;
     }
 
     .salida_datos {
@@ -230,6 +248,9 @@ footer p {
 
     .salida_error_doll {
         display: none;
+    }
+    .salida_resultado_botones{
+        font-size: 1rem;
     }
 }
 @media(max-width: 375px) {
