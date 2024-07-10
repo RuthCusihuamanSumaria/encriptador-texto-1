@@ -26,6 +26,9 @@ Las llaves de encriptacion solicitadas son las siguientes:
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
 - La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
 - El resultado debe ser mostrado en la pantalla.
+
+  <img src="https://github.com/RuthCusihuamanSumaria/encriptador-texto-1/blob/main/imagenes/botones.jpg">
+  <img src="https://github.com/RuthCusihuamanSumaria/encriptador-texto-1/blob/main/imagenes/respuesta.jpg">
   
 
 ## Tecnologías utilizadas durante el curso
@@ -33,6 +36,8 @@ Las llaves de encriptacion solicitadas son las siguientes:
 * Visual Studio Code
 * Git y GitHub
 * Figma
+
+  <img src="https://github.com/RuthCusihuamanSumaria/encriptador-texto-1/blob/main/imagenes/logos.jpg">
 
 ## Prueba del proyecto
 https://encriptador-detexto-gamma.vercel.app/
