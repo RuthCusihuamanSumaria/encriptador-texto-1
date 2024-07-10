@@ -1,5 +1,5 @@
 <h1> 🔏Encriptador de texto</h1>
-<img src="./imagenes/muñeco.jpg">
+<img src="https://github.com/RuthCusihuamanSumaria/encriptador-texto-1/blob/main/imagenes/abc.jpg">
 
 
 ##  Descripción 💡
