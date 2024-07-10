@@ -4,7 +4,7 @@
 
 ##  Descripción 💡
 
-Encriptador de texto desarrollado con JavaScript, HTML y CSS para el challenge del **_Proyecto ONE_** de **Oracle+Alura LATAM**.
+Encriptador de texto desarrollado con JavaScript, HTML y CSS para el challenge del **_Encriptado de Texto_** de **Oracle+Alura LATAM**.
 
 El desafio consiste en construir una pagina web que encripte y desencripte texto que sera ingresado por el usuario y presentarlo en su forma encriptada o desencriptada,
 el objetivo de este desafio es poner a prueba los conocimientos adquiridos durante el curso "Principiante en programación"
@@ -22,10 +22,11 @@ Las llaves de encriptacion solicitadas son las siguientes:
 ##  Requisitos ✔️
 
 - Debe funcionar solo con letras minúsculas.
-- No deben ser utilizados letras con acentos ni caracteres especiales.
+- No se debe de utilizar con letras con acentos, ni caracteres especiales.
 - Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
-- La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
+- La página debe tener campos para inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre las dos opciones.
 - El resultado debe ser mostrado en la pantalla.
+  
 
 ## Tecnologías utilizadas durante el curso
 * JavaScript, HTML-5, CSS3
@@ -35,3 +36,6 @@ Las llaves de encriptacion solicitadas son las siguientes:
 
 ## Prueba del proyecto
 https://encriptador-detexto-gamma.vercel.app/
+
+
+<img src="https://github.com/RuthCusihuamanSumaria/encriptador-texto-1/blob/main/imagenes/bcd.jpg">
